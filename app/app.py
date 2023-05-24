@@ -5,6 +5,9 @@ import pickle
 from PIL import Image
 # encode blue=1 & red=0
 
+
+df = pd.read_csv("app\FIGHTER_STAT.csv")
+
 # style css
 st.markdown('''
         <style>
