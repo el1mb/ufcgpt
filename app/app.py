@@ -72,7 +72,7 @@ st.markdown('''
 
 df = pd.read_csv("/app/ufcgpt/app/FIGHTER_STAT.csv")
 fighters = df["fighter"].tolist()
-ens_method = pickle.load(open("ens_method.sav", 'rb'))
+ens_method = pickle.load(open("/app/ufcgpt/app/ens_method.sav", 'rb'))
 
 def predictEnsemble(sample):
     prediction = ens_method.predict(sample)
