@@ -70,7 +70,7 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 
 
-df = pd.read_csv("FIGHTER_STAT.csv")
+df = pd.read_csv("/app/ufcgpt/app/FIGHTER_STAT.csv")
 fighters = df["fighter"].tolist()
 ens_method = pickle.load(open("ens_method.sav", 'rb'))
 
