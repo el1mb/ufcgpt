@@ -6,7 +6,6 @@ from PIL import Image
 # encode blue=1 & red=0
 
 
-df = pd.read_csv("app\FIGHTER_STAT.csv")
 
 # style css
 st.markdown('''
@@ -71,8 +70,7 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 
 
-
-df = pd.read_csv("FIGHTER_STAT.CSV")
+df = pd.read_csv("FIGHTER_STAT.csv")
 fighters = df["fighter"].tolist()
 ens_method = pickle.load(open("ens_method.sav", 'rb'))
 
